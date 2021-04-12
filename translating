@@ -1,0 +1,12 @@
+breed = input("name a breed: ")
+print("your result: ",end="")
+
+def translation():
+
+    for letter in breed:
+        if letter in "aeiouAEIOU":
+          print("g",end="")
+        else:
+         print(letter,end="")
+
+translation()
