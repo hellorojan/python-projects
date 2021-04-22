@@ -1,0 +1,25 @@
+class quiz:
+    def __init__(self, prompt, answer):
+        self.prompt = prompt
+        self.answer = answer
+ # the below code is typed in another file
+ from learn import quiz
+
+questions = ["what is water?\na)h20\nb)h10\nc)r20\n",
+            "what is capital?\na)mumbai \nb)Delhi \nc) Kochi\n",
+            "What is banana? \na)fruit \nb)Jam \nc) Water\n"
+]
+
+quest = [quiz(questions[0], "a"),
+         quiz(questions[1], "b"),
+         quiz(questions[2], "a")
+]
+
+def final():
+    score = 0
+    for rep in quest:
+        a = input(rep.prompt)
+        if a == rep.answer:
+            score +=1
+    print("you got " + str(score) + " points")
+final()
