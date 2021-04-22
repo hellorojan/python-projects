@@ -1,0 +1,15 @@
+#These are the monthly conversions. you get the full form of the month.
+month_conversions =   {'Jan': 'January',
+                       'Feb': 'February',
+                       'Mar':'March',
+                       'Apr':'April',
+                       'May':'May',
+                       'Jun':'June',
+                       'Jul':'July',
+                       'Aug': 'August',
+                       'Sep':'September',
+                       'Oct':'October',
+                       'Nov':'November',
+                       'Dec':'December'
+                    }
+print(month_conversions['Jan'])
