@@ -1,3 +1,4 @@
+#Students are classified as passed or failed based on their grades.
 class student:
     def __init__(self, name, gpa):
         self.name = name
