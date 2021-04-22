@@ -1,0 +1,16 @@
+class student:
+    def __init__(self, name, gpa):
+        self.name = name
+        self.gpa = gpa
+    def dont(self):
+        if self.gpa <=5:
+           print("failed")
+        else:
+           print("passed")
+        exit()
+# below code are written in a new file
+from learn import student
+student1 = student("ashik", 7)
+student2 = student("mridu", 4)
+
+print(student1.dont())
