@@ -1,0 +1,21 @@
+#this is an example of using class in class function in python.
+#code under the file name 't'
+class chef:
+    def chicken(self):
+        print("the chef makes chiken")
+    def beef(self):
+        print("the chef makes beef")
+    def special(self):
+        print("the chef makes rice")
+#code under the file name 'learn'     
+      from t import chef
+class Indianchef(chef):
+    def special(self):
+        print("the chef makes chapathi")
+# code in a new file       
+from learn import Indianchef
+from t import chef
+mchef = chef()
+print(mchef.beef())
+mychef = Indianchef()
+print(mychef.beef())
